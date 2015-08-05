@@ -5,7 +5,7 @@ The Ops Dashboard Widgets (JS) are examples of how to extend the [Operations Das
 
 ## Features
 
-* [Bomb Threat Addin](BombThreatMapTool/Readme.md)
+* [Bomb Threat Addin](bombthreatMapTool/README.md)
 * [Buffer Map Tool](BufferMapTool/Readme.md)
 
 ## Sections
