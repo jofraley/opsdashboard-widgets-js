@@ -1,0 +1,12 @@
+{
+	"type": "Map Tool",
+	"title": "Bomb Threat Map Tool",
+	"description": "Show evacuation areas for bomb threat stand-off distances",
+	"usePortalServices": false,
+	"runtime": {
+		"iconPath": "bomb16.png",
+		"path": "bombthreat.html",
+		"viewType": "toolbar"
+	},
+	"credits": "By Esri (http://www.esri.com)"
+}

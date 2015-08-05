@@ -1,0 +1,61 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: top;
+  padding: 5px;
+  width: 100%;
+}
+
+.table-row{
+  display: table-row;
+}
+
+.labelContainer {
+  font-family: Arial;
+  font-size: 12px;
+  width: 250px;
+}
+
+.comboContainer {
+  width: 30px;
+}
+
+.addressContainer {
+  width: 150px;
+}
+
+.searchContainer {
+  width: 20px;
+}
+
+.orContainer {
+  font-family: Arial;
+  font-size: 12px;
+  width: 10px;
+}
+
+.clickmapContainer{
+  width: 150px;
+}
+
+.runContainer {
+  width: 20px;
+}
+
+.buttonContainer {
+  width: 20px;
+}
+

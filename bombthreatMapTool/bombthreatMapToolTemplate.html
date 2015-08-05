@@ -1,0 +1,38 @@
+<div class="table" xmlns:placeHolder="http://www.w3.org/1999/xhtml">
+  <div class="table-row">
+    <div class="table-cell labelContainer">
+      Select the bomb type:
+    </div>
+    <div class="table-cell comboContainer">
+      <select data-dojo-type="dijit/form/Select" data-dojo-attach-point="bombtype">
+        <option value="70,1200" selected="selected">Pipe Bomb</option>
+        <option value="110,1750">Suicide</option>
+        <option value="150,1850">Briefcase/suitcase bomb</option>
+        <option value="320,1900">Sedan</option>
+        <option value="400,2400">SUV/van</option>
+        <option value="640,3800">Small delivery truck</option>
+        <option value="860,5100">Container/water truck</option>
+        <option value="1570,9300">Semi-trailer</option>
+      </select>
+    </div>
+    <div class="table-cell addressContainer">
+      <input data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="address" value="Enter address" ></input>
+    </div>
+    <div class="table-cell searchContainer">
+      <button data-dojo-attach-event="onClick:clickSearch">Search</button>
+    </div>
+    <div class="table-cell orContainer">
+        Or
+    </div>
+    <div class="table-cell clickmapContainer">
+      <button data-dojo-attach-event="onClick:clickMap">Click Map</button>
+    </div>
+    <div class="table-cell runContainer">
+        <button data-dojo-attach-event="onClick:runBuffer">Run</button>
+    </div>
+    <div class="table-cell buttonContainer">
+      <button data-dojo-attach-event="onClick:deactivateMapTool">Done</button>
+    </div>
+  </div>
+</div>
+ 
