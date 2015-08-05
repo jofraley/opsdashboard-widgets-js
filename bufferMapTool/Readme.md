@@ -1,34 +1,21 @@
-# opsdashboard-widgets-wpf
+# Buffer Map Tool
 
-The Ops Dashboard Widgets (JS) are examples of how to extend the [Operations Dashboard for ArcGIS](http://resources.arcgis.com/en/operations-dashboard/) using the JavaScript API.  There are multiple Addins available to use as is or to take and modify to meet your needs.
-
+The Buffer map tool generates buffers at specified distance and rings.  This addin is built as a Map Tool with a Toolbar for the [Operations Dashboard for ArcGIS](http://resources.arcgis.com/en/operations-dashboard/).  The addin can be added as a Map Tool on a Map Widget.  No data is required to run the tool.
 
 ## Features
 
-* [Bomb Threat Map Tool](bombthreatMapTool/README.md)
-* [Buffer Map Tool](bufferMapTool/Readme.md)
-
-## Sections
-
-* [Requirements](#requirements)
-* [Instructions](#instructions)
-* [Resources](#resources)
-* [Issues](#issues)
-* [Contributing](#contributing)
-* [Licensing](#licensing)
-
-## Requirements
-
-## Instructions
+* Creates buffer polygons based on specified distance and ring intervals. You can create buffers around
+1. Points you draw on the map (draw points on the map using draw points button)
+2.  
 
 ### General Help
 
 * [New to Github? Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
 
-### Getting Started with the Ops Dashboard Widgets (JS)
+## Requirements
 
-* You must setup your development environment for the Operations Dashboard for ArcGIS.  Follow the instuctions at [Operations Dashboard Help](https://developers.arcgis.com/javascript/jshelp/operations-dashboard-extensibility-getstarted-setup-dev-env.html)
-
+* Have development environment setup to use this map tool.  See [reference](https://developers.arcgis.com/javascript/jshelp/operations-dashboard-extensibility-getstarted-setup-dev-env.html) on how to set this up.
+ 
 ## Resources
 
 * Learn more about the [Operations Dashboard for ArcGIS](http://resources.arcgis.com/en/operations-dashboard/)
@@ -36,17 +23,18 @@ The Ops Dashboard Widgets (JS) are examples of how to extend the [Operations Das
 see the site for concepts, samples, and references for using the API to create mapping applications.
 * Also checkout this [GitHub Repository](https://github.com/Esri/dashboard-samples) for additional samples
 
+
 ## Issues
 
 Find a bug or want to request a new feature?  Please let us know by submitting an issue.
 
 ## Contributing
 
-I welcome contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
+Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
 
 ## Licensing
 
-Copyright 2012-2013 Esri
+Copyright 2012 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -63,7 +51,6 @@ limitations under the License.
 A copy of the license is available in the repository's
 [license.txt](license.txt) file.
 
-Note: Portions of this code use Json.NET whose use is governed by the MIT License. For more details, see [http://json.codeplex.com/license](http://json.codeplex.com/license).
 
 [](Esri Tags: Operations Dashboard)
 [](Esri Language: JavaScript)
