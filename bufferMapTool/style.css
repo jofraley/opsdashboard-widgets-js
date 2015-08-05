@@ -14,14 +14,31 @@ html, body {
 
 .table-cell {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   padding: 5px;
+  width: 100%;
+}
+
+.table-row {
+  display: table-row;
 }
 
 .labelContainer {
   font-family: Arial;
   font-size: 12px;
-  width: 100%;
+  width: 60px;
+}
+
+.distanceContainer {
+  width: 10px;
+}
+
+.unitsContainer {
+  width: 30px;
+}
+
+.clickmapContainer {
+  width: 70px;
 }
 
 .buttonContainer {

@@ -22,8 +22,6 @@ define([
 
 			// The buffer parameters
 			this.bufferParams = new BufferParameters();
-			this.bufferParams.unit = GeometryService.UNIT_METER;
-			this.bufferParams.distances = [500, 1000, 2000];
 
 			// Create the graphic for the push pin
 			var iconPath = location.href.replace(/\/[^/]+$/, '/');
@@ -60,8 +58,8 @@ define([
 
 		  // Update the size of the user experience
 		  this.setDisplaySize({
-			width: Math.min(this.availableDisplaySize.width / 2, 400),
-			height: 40
+			width: 700,
+			height: 75
 		  });
 
 		  // Creates two graphics layers to control the order of draw buffers below the pushpin.
@@ -80,7 +78,7 @@ define([
 		availableDisplaySizeChanged: function (availableSize) {
 			// Update the size of the user experience
 			this.setDisplaySize({
-				width: Math.min(availableSize.width / 2, 400),
+				width: Math.min(availableSize.width / 2, 600),
 				height: 40
 			});
 		},
@@ -100,6 +98,10 @@ define([
 		  // Starts the buffering process
 		  this.showBuffers(geometry);
 		},
+		clickMap: function () {
+			// Activate the drawing activity when the graphics layer is ready
+			this.activateMapDrawing({geometryType: "point"});
+		},
 		showPushPin: function (geometry) {
 
 		  // Update the position of the push pin graphic
@@ -111,7 +113,17 @@ define([
 		showBuffers: function (geometry) {
 
 		  // Use the geometry service to calculate 3 buffer rings around the clicked point
+		  if (this.units.value == "GeometryService.UNIT_FOOT")
+			this.bufferParams.unit = GeometryService.UNIT_FOOT;
+		  else if (this.units.value == "GeometryService.UNIT_STATUTE_MILE")
+		    this.bufferParams.unit = GeometryService.UNIT_STATUTE_MILE;
+		  else if (this.units.value == "GeometryService.UNIT_KILOMETERS")
+		    this.bufferParams.unit = GeometryService.UNIT_KILOMETER;
+		  else if (this.units.value == "GeometryService.UNIT_METERS")
+		    this.bufferParams.unit = GeometryService.UNIT_METER;
+		  this.bufferParams.distances = [];
 
+		  this.bufferParams.distances.push(parseInt(this.distance.value));
 		  // Update the buffer params
 		  this.bufferParams.geometries = [geometry];
 

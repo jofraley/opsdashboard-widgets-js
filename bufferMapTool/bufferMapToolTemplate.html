@@ -1,9 +1,28 @@
 <div class="table">
-  <div class="table-cell labelContainer">
-	Click on the map to create three buffers for the clicked location.
+  <div class="table-row">
+    <div class="table-cell labelContainer">
+      Enter the distance:
+    </div>
+    <div class="table-cell distanceContainer">
+      <input data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="distance" value="1000"></input>
+    </div>
+    <div class="table-cell labelContainer">
+      Select the units:
+    </div>
+    <div class="table-cell unitsContainer">
+      <select data-dojo-type="dijit/form/Select" data-dojo-attach-point="units">
+        <option value="GeometryService.UNIT_FOOT" selected="selected">Feet</option>
+        <option value="GeometryService.UNIT_STATUTE_MILE">Miles</option>
+        <option value="GeometryService.UNIT_KILOMETER">Kilometer</option>
+        <option value="GeometryService.UNIT_METER">Meters</option>
+      </select>
+    </div>
+    <div class="table-cell clickmapContainer">
+      <button data-dojo-attach-event="onClick:clickMap">Click Map</button>
+    </div>
+    <div class="table-cell buttonContainer">
+      <button data-dojo-attach-event="onClick:deactivateMapTool">Done</button>
+    </div>
   </div>
-  <div class="table-cell buttonContainer">
-    <button data-dojo-attach-event="onClick:deactivateMapTool">Done</button>
-  </div>
- </div>
+</div>
  
